@@ -298,6 +298,7 @@ html {
 .chanh-img {
     width:100%;
     display:block;
+    height:455px;
 }
 
 .chanh-body {
@@ -709,6 +710,14 @@ html {
         width:24%;
         height:auto;
     }
+
+    .chanh-item {
+        width:100%;
+    }
+
+    .chanh-img {
+        height:auto;
+    }
 }
 
 
@@ -726,6 +735,10 @@ html {
     #content .love-list {
         flex-direction: column;
         align-items: center;
+    }
+
+    .chanh-item {
+        width:100%;
     }
 
    
