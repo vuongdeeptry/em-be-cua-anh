@@ -19,15 +19,15 @@
             <li><a href="#">Mở đầu</a></li>
             <li><a href="#content">Điều anh muốn nói</a></li>
             <li><a href="#me&you">Em pé và anhh</a></li>
-            <li><a href="">My love</a></li>
-            <li><a href="">
+            <li><a href="#slider">My love</a></li>
+            <li><a href="#">
                     Bonus
                 <i class="nav-arrow-down ti-angle-down"></i>
             </a>
                 <ul class="subnav">
-                    <li><a href="">Ảnh nude</a></li>
-                    <li><a href="">Merchandise</a></li>
-                    <li><a href="">Media</a></li>
+                    <li><a href="#">Ảnh nude</a></li>
+                    <li><a href="#">Merchandise</a></li>
+                    <li><a href="#">Media</a></li>
                 </ul>
             
             </li>
@@ -35,6 +35,10 @@
 
         <div class="search-btn">
             <i class="search-icon ti-search"></i>
+        </div>
+
+        <div id="mobile-menu" class ="menu-btn">
+            <i class="menu-icon ti-menu"></i>
         </div>
     </div>
 
@@ -52,7 +56,7 @@
             <h2 class="love-heading">Điều anh muốn nói</h2>
             <p class="love-sub-heading">Anh iuu emm</p>
             <p class="about-love">                
-                We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Nhân dịp ngày Phụ nữ Việt Nam,anh chúc vợ anh càng ngày càng xinh đẹp,caoo hơn,giỏi hơn,iuu anh nhìu hơn và iuu bản thân nhìu hơn nữa nkaa
             </p>
 
             <div class="love-list mt-16">
@@ -118,7 +122,7 @@
                 
             </div>
             
-            <div class="loving-you">
+            <div class="loving-you" id="mlem-nude">
                 <h2 class="love-heading">Bonus</h2>
                 <p class="love-sub-heading">Những em ảnh nude chất lượng:3</p>
                 <div class="nude-body row">
@@ -194,13 +198,13 @@
 
                <div class="video-body">
                <video class="video" controls>
-                   <source src="./video/y2mate.com - Vì đôi lúc anh thấy em giận anh quá nên thôi  Về Bên AnhLofi Ver Jack x Mihle  Lyric Video_720pFHR.mp4" >
+                   <source src="./video/505975639788738883.mp4" >
                </video>
                </div>
 
-               <div class="video-footer">
+               
                    <p class="footer-letter">Cầm tay nhaoo đi típ nhaa:3</p>
-                </div>
+               
                 <div class="confirm">
                     <button class="verify js-verify">
                         Tất nhiên rồi
@@ -223,8 +227,8 @@
                 <p class="right-answer">Câu trả lời chính xác uii</p>
             </div>
 
-            <div class="verify-body">
-                <a href="#slider" class="navigation">
+            <div class="verify-body" >
+                <a href="#mlem-nude" class="navigation" >
                     Bấm vào đây để chuyển sang
                      phần tiếp theo nhaa
                 </a>
@@ -333,7 +337,60 @@
     </script>
 
     
+<script>
+    var header = document.getElementById('header')
+    var mobileMenu = document.getElementById('mobile-menu')
+    var headerHeight = header.clientHeight 
+    
+    //Đóng mở mobile menu
+    var isClosed = header.clientHeight === headerHeight;
 
+    mobileMenu.onclick = function() {
+        var isClosed = header.clientHeight === headerHeight; 
+
+        if (isClosed) {
+            header.style.height = 'auto'
+        } else {
+            header.style.height = null
+        }
+    }
+
+    //Tự động đóng khi chọn menu
+    var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
+    console.log(menuItems)
+    
+</script>
+
+<div class="footer">
+    <div class="footer__love">
+        <div class="footer__header">
+            <h2 class="footer__header-desc">
+                Ending part
+            </h2>
+        </div>
+        <div class="footer__love-body">
+            <div class="footer__love-avatar">
+            <img src="./image/z3779528236639_2f5f24ef45f660fa2381555a0eab106f.jpg" alt="" class="love-img">
+            </div>
+
+            <div class="footer__love-desc">
+                <p class="footer__love-paragraph">
+                    Và điều cuối cùng anh muốn nói là anh iuu em nhìu nhắmmmm:3
+                </p>
+            </div>
+
+            
+        </div>
+        </div>
+        <div class="footer__source">
+            <p class="footer__source-powered">Powered by my love for you</p>
+            <a href="https://www.facebook.com/phtranhne" class="footer__icon">
+                <i class="ti-facebook"></i>
+            </a>
+            
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
